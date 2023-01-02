@@ -1,0 +1,17 @@
+{
+  "name": "dreamsmith_api",
+  "version": "0.1.0",
+  "description": "Backend for dreamsmith",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2",
+    "morgan": "^1.10.0"
+  }
+}
