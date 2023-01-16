@@ -4,6 +4,8 @@
   "description": "Backend for dreamsmith",
   "main": "server.js",
   "scripts": {
+    "dev:data:import": "node dev-data/data/importDevData.js --import",
+    "dev:data:delete": "node dev-data/data/importDevData.js --delete",
     "start": "nodemon server.js"
   },
   "author": "",

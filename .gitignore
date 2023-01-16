@@ -1,3 +1,4 @@
 .prv.env
 node_modules/
-dev/
+dev-data/data/uploads
+dev-data/data/*.txt

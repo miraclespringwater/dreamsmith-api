@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "63be50c9b703d66c5db8556d",
+    "username": "brokenchrome",
+    "email": "bc@dreamsmith.net",
+    "displayName": "Broken Chrome",
+    "firstName": "Broken",
+    "lastName": "Chrome",
+    "isArtist": true
+  },
+  {
+    "_id": "63be50c9b703d66c5db8556e",
+    "username": "miraclespringwater",
+    "email": "miracle@dreamsmith.net",
+    "displayName": "Miracle Spring Water",
+    "firstName": "Miracle",
+    "lastName": "Water",
+    "isArtist": true
+  },
+  {
+    "_id": "63be50c9b703d66c5db8556f",
+    "username": "aerthcore",
+    "email": "aerthcore@dreamsmith.net",
+    "displayName": "ærthcore",
+    "isArtist": true
+  },
+  {
+    "_id": "63be50c9b703d66c5db85570",
+    "username": "bgriffin",
+    "email": "brian.griffin@xyz.com",
+    "displayName": "Houston's Finest",
+    "firstName": "Brian",
+    "lastName": "Griffin"
+  }
+]
