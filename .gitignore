@@ -2,3 +2,5 @@
 node_modules/
 dev-data/data/uploads
 dev-data/data/*.txt
+.eslintrc.json
+.prettierrc

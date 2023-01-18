@@ -1,0 +1,96 @@
+[
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "Kick_01.wav",
+    "category": "oneshot",
+    "tags": ["kick", "distorted", "wide"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "Hat_01.wav",
+    "category": "oneshot",
+    "tags": ["hat"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "Snare_01.wav",
+    "category": "oneshot",
+    "tags": ["snare", "acoustic"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "Chord_01.wav",
+    "category": "oneshot",
+    "tags": ["chord", "dark", "wide"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "Cowbell_01.wav",
+    "category": "oneshot",
+    "tags": ["cowbell", "percussion"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "Cowbell_02.wav",
+    "category": "oneshot",
+    "tags": ["cowbell", "percussion"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2d",
+    "fileName": "808_01.wav",
+    "category": "oneshot",
+    "tags": ["bass", "808", "distorted"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2d",
+    "fileName": "Vocal_01.wav",
+    "category": "loop",
+    "tags": ["vocal", "chop"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2d",
+    "fileName": "DirtyCowbell_01.wav",
+    "category": "oneshot",
+    "tags": ["cowbell", "percussion", "dark"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "DreamChords_01.wav",
+    "category": "loop",
+    "tags": ["chords", "dark", "ambient"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "DreamPad_01.wav",
+    "category": "loop",
+    "tags": ["pad", "dark", "spacey"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "DreamPad_02.wav",
+    "category": "loop",
+    "tags": ["pad", "bright", "spacey"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "PastelChords_01.wav",
+    "category": "loop",
+    "tags": ["chords", "dark", "ambient"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "PastelPad_01.wav",
+    "category": "loop",
+    "tags": ["pad", "dark", "spacey"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2e",
+    "fileName": "PastelPad_02.wav",
+    "category": "loop",
+    "tags": ["pad", "bright", "spacey"]
+  }
+]

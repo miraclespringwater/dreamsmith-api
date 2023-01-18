@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "63c849264fe6b9d0723a6d2b",
+    "title": "Embedded In Texas Sample Pack, Vol. 1",
+    "description": "Sounds from down south.",
+    "genre": "hip-hop"
+  },
+  {
+    "_id": "63c849264fe6b9d0723a6d2c",
+    "title": "Eerie Sound Kit",
+    "description": "First phonk sound kit.",
+    "genre": "phonk"
+  },
+  {
+    "_id": "63c849264fe6b9d0723a6d2d",
+    "title": "Gldni Sound Kit",
+    "description": "More sounds from down south.",
+    "genre": "hip-hop"
+  },
+  {
+    "_id": "63c849264fe6b9d0723a6d2e",
+    "title": "Dreamsmith's Dreamscapes, Vol. 1",
+    "description": "Sounds from the dreamscape",
+    "genre": "ambient"
+  },
+  {
+    "_id": "63c849264fe6b9d0723a6d2f",
+    "title": "Pasted Red Sound Kit, Vol. 1",
+    "description": "Pastel sounds make me wet.",
+    "genre": "pop"
+  }
+]
