@@ -2,8 +2,9 @@ require('dotenv').config({ path: './.prv.env' });
 const fs = require('fs');
 const mongoose = require('mongoose');
 
-const Sample = require('../../models/sampleModel');
 const Pack = require('../../models/packModel');
+const Sample = require('../../models/sampleModel');
+const Preset = require('../../models/presetModel');
 
 /* Connect to MongoDB database */
 // const DB = process.env.MONGO_URL.replace(
@@ -34,6 +35,9 @@ mongoose
     );
     const samples = JSON.parse(
       fs.readFileSync(__dirname + '/samples.json')
+    );
+    const presets = JSON.parse(
+      fs.readFileSync(__dirname + '/presets.json')
     );
 
     // IMPORT DATA INTO DB
@@ -67,11 +71,22 @@ mongoose
       }
     };
 
+    const importPresets = async () => {
+      try {
+        console.log('Importing presets...');
+        await Preset.insertMany(presets);
+        console.log('Imported presets.');
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
     const importData = async () => {
       try {
         // await importUsers();
         await importPacks();
         await importSamples();
+        await importPresets();
       } catch (err) {
         console.error(`Failed to import data: ${err}`);
       }

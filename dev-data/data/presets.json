@@ -1,0 +1,92 @@
+[
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "sylenth_pad_fx01.fxp",
+    "device": {
+      "type": "vst",
+      "name": "Sylenth1",
+      "version": "3.0"
+    },
+    "category": "preset",
+    "tags": ["pad", "ambient", "fx"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "sylenth_pad_fx02.fxp",
+    "device": {
+      "type": "vst",
+      "name": "Sylenth1",
+      "version": "3.0"
+    },
+    "category": "preset",
+    "tags": ["pad", "ambient", "fx"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2b",
+    "fileName": "serum_key_pluck01.fxp",
+    "device": {
+      "type": "vst",
+      "name": "Serum",
+      "version": "1.215"
+    },
+    "category": "preset",
+    "tags": ["keys", "dark", "string", "pluck", "metallic"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "phonk_drum_rack01.als",
+    "device": {
+      "type": "daw",
+      "name": "Ableton",
+      "version": "11.1"
+    },
+    "category": "rack",
+    "tags": ["drums", "distorted", "phat"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "phonk_drum_rack02.als",
+    "device": {
+      "type": "daw",
+      "name": "Ableton",
+      "version": "11.1"
+    },
+    "category": "rack",
+    "tags": ["drums", "distorted", "phat"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2c",
+    "fileName": "memphis_chop_rack01.als",
+    "device": {
+      "type": "daw",
+      "name": "Ableton",
+      "version": "11.1"
+    },
+    "category": "rack",
+    "tags": ["drums", "memphis", "vocals"]
+  },
+
+  {
+    "packId": "63c849264fe6b9d0723a6d2d",
+    "fileName": "houston_drum_rack01.als",
+    "device": {
+      "type": "daw",
+      "name": "Ableton",
+      "version": "11.0"
+    },
+    "category": "rack",
+    "tags": ["drums", "houston", "phat"]
+  },
+  {
+    "packId": "63c849264fe6b9d0723a6d2d",
+    "fileName": "gldni_vocal_rack01.als",
+    "device": {
+      "type": "daw",
+      "name": "Ableton",
+      "version": "11.0"
+    },
+    "category": "rack",
+    "tags": ["vocal processing", "dark", "tight"]
+  }
+]
