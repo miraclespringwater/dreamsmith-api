@@ -1,7 +1,8 @@
 const Pack = require('../models/packModel');
-const Samples = require('../models/sampleModel');
+const Sample = require('../models/sampleModel');
 const Preset = require('../models/presetModel');
 const ApiFeatures = require('../utils/apiFeatures');
+
 
 exports.getAllPacks = async (req, res) => {
   try {
@@ -12,7 +13,6 @@ exports.getAllPacks = async (req, res) => {
       .paginate();
     const packs = await features.mongooseQuery;
 
-    // send response
     res.status(200).json({
       status: 'success',
       results: packs.length,
@@ -24,7 +24,7 @@ exports.getAllPacks = async (req, res) => {
   }
 };
 
-exports.getPackContents = async (req, res) => {
+exports.getPackPresets = async (req, res) => {
   try {
     let samples, presets;
     if (req.params.type == 'samples' || !req.params.type) {
@@ -67,9 +67,21 @@ exports.getPackContents = async (req, res) => {
   }
 };
 
+exports.getPack = async (req, res) => {
+  const packFeatures = new ApiFeatures(
+    Pack.findById(req.params.id)
+  ).limitFields();
+  const pack = await packFeatures.mongooseQuery;
+  res.status(200).json({ status: 'success', data: pack });
+};
+
 exports.createPack = async (req, res) => {
-  const pack = await Pack.create(req.body);
-  console.log(pack);
+  const packFeatures = new ApiFeatures(
+    Pack.create(req.body),
+    req.query
+  );
+
+  const pack = await packFeatures.mongooseQuery;
   res.status(200).json({ status: 'success', data: pack });
 };
 

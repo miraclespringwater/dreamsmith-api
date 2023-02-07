@@ -59,10 +59,17 @@ const schemaObj = {
     ],
   },
 };
-let schemaOptions;
+const schemaOptions = {
+  toJSON: {
+    transform: (doc, obj) => {
+      delete obj.__v;
+      return obj;
+    },
+  },
+};
 if (process.argv[2] === '--import') {
   schemaObj._id = mongoose.ObjectId;
-  schemaOptions = { _id: false };
+  schemaOptions._id = false;
 }
 
 const packSchema = new mongoose.Schema(
