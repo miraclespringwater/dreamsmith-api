@@ -1,7 +1,7 @@
 const Sample = require('../models/sampleModel');
 const ApiFeatures = require('../utils/apiFeatures');
 
-exports.getSamplesByPack = async (req, res) => {
+exports.getPackSamples = async (req, res) => {
   try {
     const sampleFeatures = new ApiFeatures(
       Sample.find({ packId: req.params.packId }),
@@ -22,4 +22,11 @@ exports.getSamplesByPack = async (req, res) => {
     console.log(err);
     res.status(500).json({ status: 'fail' });
   }
+};
+exports.getPackSampleFiles = (req, res) => {
+  res.json({ message: 'hello from sample files by pack' });
+};
+
+exports.uploadPackSamples = (req, res) => {
+  res.json({ message: 'hello form upload sample files by pack' });
 };

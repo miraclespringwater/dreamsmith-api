@@ -2,37 +2,28 @@ const express = require('express');
 const packController = require('../controllers/packController');
 const sampleController = require('../controllers/sampleController');
 
-const checkAccepts = require('../middleware/checkAccepts');
+const exactAccept = require('../middleware/exactAccept');
 
 const router = express.Router();
 
-router
-  .route('/')
-  .get(packController.getAllPacks)
-  .post(packController.createPack);
+router.get('/', packController.getAllPacks);
+router.post('/', packController.createPack);
 
-router
-  .route('/:packId')
-  .get(packController.getPack)
-  .patch(packController.updatePack)
-  .delete(packController.deletePack);
+router.get('/:packId', packController.getPack);
+router.patch('/:packId', packController.updatePack);
+router.delete('/:packId', packController.deletePack);
 
-router
-  .route('/:packId/samples')
-  .get(checkAccepts.json, sampleController.getSamplesByPack)
-  .post((req, res) => {
-    res.json({ message: 'uploaded samples for pack' });
-  });
+router.get('/:packId/samples', exactAccept('application/zip'), sampleController.getPackSampleFiles);
+router.get('/:packId/samples', sampleController.getPackSamples);
 
-router
-  .route('/:packId/samples')
-  .get(checkAccepts.zip, (req, res) =>
-    res.json({ message: 'zip endpoint' })
-  );
-
-router
-  .route('/:packId/presets')
-  .get(packController.getPackPresets);
+router.post('/:packId/samples', sampleController.uploadPackSamples);
+/* router.post('/:packId/samples', (req, res) => { */
+/*   res.json({ */
+/*     message: 'uploaded samples for pack', */
+/*   }); */
+/* }); */
+/**/
+/* router.get('/:packId/presets', packController.getPackPresets); */
 
 module.exports = router;
 
