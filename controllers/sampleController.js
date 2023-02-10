@@ -1,6 +1,8 @@
 const Sample = require('../models/sampleModel');
 const ApiFeatures = require('../utils/apiFeatures');
 
+const s3 = require('../utils/s3Client');
+
 exports.getPackSamples = async (req, res) => {
   try {
     const sampleFeatures = new ApiFeatures(
@@ -23,10 +25,15 @@ exports.getPackSamples = async (req, res) => {
     res.status(500).json({ status: 'fail' });
   }
 };
-exports.getPackSampleFiles = (req, res) => {
-  res.json({ message: 'hello from sample files by pack' });
+exports.getPackSampleFiles = async (req, res) => {
+  await s3
+    .getObject({ Bucket: 'dreamsmith-dev2/zips', Key: '1675955320465' })
+    .createReadStream()
+    .pipe(res);
+  /* res.json({ message: 'hello from sample files by pack' }); */
 };
 
-exports.uploadPackSamples = (req, res) => {
+exports.sampleUploadHandler = (req, res) => {
+  console.log(req.file);
   res.json({ message: 'hello form upload sample files by pack' });
 };
